@@ -1,7 +1,7 @@
 name: Deploy to Digital Ocean
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]  # Make sure this matches your main branch name (could be 'master')
 
 jobs:
   deploy:
@@ -29,3 +29,14 @@ jobs:
         source: "dist/*"
         target: "/var/www/resume-site"
         strip_components: 1
+
+    - name: Set permissions and restart Nginx
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.DO_HOST }}
+        username: ${{ secrets.DO_USERNAME }}
+        key: ${{ secrets.DO_SSH_KEY }}
+        script: |
+          sudo chown -R www-data:www-data /var/www/resume-site
+          sudo chmod -R 755 /var/www/resume-site
+          sudo systemctl restart nginx
