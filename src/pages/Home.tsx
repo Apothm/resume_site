@@ -2,6 +2,8 @@ import React from 'react';
 import { Github, Mail } from 'lucide-react';
 import profileImg from '../assets/images/bryan.jpg'
 
+console.log('Image path:', profileImg);
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-950 text-white pl-16">
