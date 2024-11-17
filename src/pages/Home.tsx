@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Mail } from 'lucide-react';
-import profileImg from '../assets/bryan.jpg'
+import profileImg from '../assets/images/bryan.jpg'
 
 export default function Home() {
   return (
