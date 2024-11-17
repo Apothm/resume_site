@@ -23,7 +23,7 @@ export default function Home() {
                 <Mail size={20} />
                 Contact Me
               </a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"
+              <a href="https://github.com/Apothm" target="_blank" rel="noopener noreferrer"
                  className="flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors">
                 <Github size={20} />
                 GitHub
