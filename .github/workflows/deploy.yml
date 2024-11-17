@@ -1,7 +1,7 @@
 name: Deploy to Digital Ocean
 on:
   push:
-    branches: [ main ]  # Make sure this matches your main branch name (could be 'master')
+    branches: [ master ]  # Make sure this matches your main branch name (could be 'master')
 
 jobs:
   deploy:
