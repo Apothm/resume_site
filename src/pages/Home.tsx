@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Mail } from 'lucide-react';
+import profileImg from '../assets/bryan.jpg'
 
 export default function Home() {
   return (
@@ -31,8 +32,8 @@ export default function Home() {
           <div className="relative">
             <div className="absolute inset-0 bg-cyan-500/20 blur-3xl rounded-full"></div>
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&h=800" 
-              alt="Alex Chen"
+              src={profileImg}
+              alt="Bryan Muncy"
               className="relative rounded-2xl w-full max-w-md mx-auto border-2 border-cyan-500/20"
             />
           </div>
